@@ -1,16 +1,22 @@
 # Interviewer guide (do not share with candidate)
 
 Senior-level React interview, 45 minutes nominal. The task list is intentionally sized so that
-most candidates will **not** finish all of Tasks 1–5 in 45 minutes — that's fine and expected. The
-point of stretching it is Task 6 (below), which is only revealed once a candidate reaches it or
-time is called. **Do not mention Task 6 or its purpose up front.**
+most candidates will **not** finish all of Tasks 1–5 in 45 minutes — that's fine and expected.
+Task 6 is visible in `TASKS.md` from the start (the candidate has full repo access, so there's no
+hiding it), but in practice most candidates won't get to it until time is short or already up.
+That's by design: Task 6 is the real point of the exercise — it's deliberately underspecified and
+sized to run long, so it mostly gets exercised under time pressure, which is exactly when tool use
+and delegation skill actually shows up.
+
+Don't call attention to Task 6 early on or frame it as special. If a candidate asks about it up
+front, it's fine to say it's the same as any other task on the list — work through them in order.
 
 ## Before you send this to a candidate
 
 This repo (the one containing this file) is your reference copy — keep it private. Run
-`scripts/make-candidate-copy.sh [output-dir]` to generate a clean copy with `INTERVIEWER_GUIDE.md`,
-`FINAL_TASK.md`, and `scripts/` stripped out and git history reset, then send/share *that* copy
-(zip it, push it to a fresh private repo, whatever your usual handoff is).
+`scripts/make-candidate-copy.sh [output-dir]` to generate a clean copy with `INTERVIEWER_GUIDE.md`
+and `scripts/` stripped out and git history reset, then send/share *that* copy (zip it, push it to
+a fresh private repo, whatever your usual handoff is).
 
 ## Format
 
@@ -102,27 +108,17 @@ over-build (e.g., persisting the entire task list instead of just view preferenc
 asked for and raises its own sync-with-the-"server" questions). A senior engineer should notice
 the scope boundary on their own.
 
-## Wrapping up Tasks 1–5 / reaching the 45-minute mark
+## Reaching Task 6
 
-Whichever comes first — they reach the end of `TASKS.md`, or 45 minutes elapses — tell them
-(verbally, in these words or similar):
-
-> "Good work. There's one more task. I'm going to give it to you now — take as long as you need,
-> and feel free to use any tools you'd normally use, including AI coding assistants, exactly as
-> you would on the job."
-
-Then hand them the content of `FINAL_TASK.md` (read it to them, paste it into a message, however
-you'd naturally hand off a ticket).
-
-**Do not tell them beforehand that this last task exists or that it's evaluating tool use** — the
-point is to observe how they naturally work when given an open-ended, realistically-scoped
-problem and enough runway to actually use their tools well, not how they perform under an
-announced test.
+Whether they get there with time to spare or only once the clock is basically out, when they
+reach it just let them go — remind them they can use whatever tools they'd normally use, including
+AI coding assistants, exactly as they would on the job. There's nothing further to hand off since
+it's already in `TASKS.md`.
 
 ## Evaluating Task 6
 
-See `FINAL_TASK.md` for the prompt itself. There's deliberately no reference implementation —
-it's underspecified on purpose. Evaluate:
+There's deliberately no reference implementation for this one — it's underspecified on purpose.
+Evaluate:
 
 - **Scoping:** did they ask clarifying questions (if allowed) or make and state reasonable
   assumptions? Did they pick something shippable rather than either a trivial stub or an

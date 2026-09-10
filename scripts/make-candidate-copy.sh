@@ -16,7 +16,6 @@ rsync -a \
   --exclude .git \
   --exclude node_modules \
   --exclude INTERVIEWER_GUIDE.md \
-  --exclude FINAL_TASK.md \
   --exclude scripts \
   "$SRC_DIR"/ "$OUT_DIR"/
 

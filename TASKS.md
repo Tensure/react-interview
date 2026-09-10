@@ -30,4 +30,23 @@ Type a search query quickly (e.g. clear the box, then type "a", then "ab", then 
 - Add "Priority" as a sort option alongside the existing ones.
 - Persist the user's chosen filters/sort/search to `localStorage`, so reloading the page restores where they left off.
 
+### 6. Smart task suggestions
+
+Product wants to add **smart task suggestions** to TaskFlow — something that gives users a bit of
+intelligent assistance while managing their tasks. That's intentionally the whole spec.
+
+Use your judgment on what to build and how big to make it. Some ideas that would satisfy this
+(not a checklist — pick a direction, or bring your own):
+
+- Suggest a priority for a new task based on its title/description/due date.
+- Flag likely-duplicate tasks when adding a new one.
+- Surface tasks that seem stuck (e.g. overdue, or untouched a long time).
+- A natural-language quick-add ("call mom tomorrow at 5" → parsed into fields).
+
+Ship something real — not a stub, not a giant redesign. Use whatever tools you'd normally reach
+for, including AI coding assistants, exactly as you would on the job. Be ready to walk through
+the decisions you made, including any you'd revisit given more time.
+
+---
+
 Move at whatever pace makes sense — if you finish early, mention it to the interviewer.
